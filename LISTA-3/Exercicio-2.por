@@ -3,24 +3,21 @@ programa
 	
 	funcao inicio()
 	{
-	
+		inteiro idade1, idade2, idade3
+		leia(idade1, idade2, idade3)
 
-
-		inteiro idade
-
-
-		leia(idade)
-
-
-		se (nao (idade>=18))
+		se(idade1 > idade2 e idade1> idade3)
 		{
-			escreva("O usuário é menor de idade")
+			escreva("A maior idade é: "+ idade1)
 		}
-		senao
+		senao se(idade2 > idade1 e idade2> idade3)
 		{
-			escreva("O usuário é maior de idade")
+			escreva("A maior idade é: "+ idade1)
 		}
-		
+		senao se(idade3 > idade1 e idade3> idade2)
+		{
+			escreva("A maior idade é: "+ idade1)
+		}
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -28,7 +25,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 39; 
+ * @POSICAO-CURSOR = 382; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
