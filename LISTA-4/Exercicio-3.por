@@ -3,18 +3,21 @@ programa
 	
 	funcao inicio()
 	{
-		inteiro tabuada
+		inteiro altura
 
-		para(inteiro i=1; i <=10; i++)
+		escreva("Digite a altura do triangulo:\n")
+		leia(altura)
+
+
+		para(inteiro i=0; i < altura; i++)
 		{
-			para(inteiro k=1; k <= 10; k++)
+			para(inteiro k=0; k<=i; k++)
 			{
-				tabuada = i*k
-
-				escreva(i+" X "+ k + " = " + tabuada+"\n")	
-				
+				escreva("*")
 			}
+			escreva("\n")
 		}
+		
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -22,9 +25,9 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 175; 
+ * @POSICAO-CURSOR = 248; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = ;
+ * @SIMBOLOS-INSPECIONADOS = {i, 12, 15, 1}-{k, 14, 16, 1};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */
